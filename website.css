@@ -1,0 +1,681 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.main{
+	height: 100vh;
+	width: 100%;
+	background-image: white;
+	background-size: cover;
+	background-position: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	position: relative;
+	box-sizing: border-box;
+	overflow-x: auto;
+}
+.navbar{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 4px solid lightgray;
+	border-right: 3px solid lightgray;
+	border-left: 2px solid lightgray;
+	box-shadow: 7px 7px 10px grey; 
+}
+.logo{
+	width: 165px;
+	height: 75px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.navbar ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 20px 20px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: myriad Pro;
+	padding-right: 2px;
+	display: flex;
+}
+.navbar ul li a:hover{
+	font-weight: bold;
+	color: darkblue;
+	border-bottom: 1px solid lightgray;
+}
+.submenu{
+	display: none;
+}
+.navbar ul li:hover .submenu{
+	display: block;
+	position: absolute;
+	background: white;
+	margin-top: 0px;
+	margin-left: 5px;
+	border-bottom: 1px solid lightgray;
+	border-right: 2px solid lightgray;
+	transition: 0.5s;
+}
+.navbar ul li:hover .submenu ul li{
+	display: block;
+	margin: 5px;
+	width: 120px;
+	padding: 8px;
+	border-radius: 4px;
+}
+ .submenu ul li:hover a{
+	color: skyblue;
+}
+.img{
+	width: 38%;
+	height: 55%;
+	margin-top: 52px;
+	margin-left: 60%;
+	animation: animate 3s linear infinite;
+	animation-delay: 3s;
+}
+@keyframes animate{
+	1% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.img:hover{
+	cursor: pointer;
+}
+h1{
+	font-size: 38px;
+	color: #002449;
+	margin-top: -29%;
+	margin-left: 85px;
+	font-family: Gadugi;
+	font-weight: bold;
+	line-height: 43px;
+	word-spacing: -1px;
+	text-shadow: 1px  black;
+	letter-spacing: -1px;
+	color: darkcyan;
+}
+#para
+{
+	margin-top: 15px;
+	font-family: myriad Pro;
+	line-height: 30px;
+	margin-left: 85px;
+	font-size: 15.5px;
+}
+#para1
+{
+	margin-top: 15px;
+	font-family: myriad Pro;
+	line-height: 30px;
+	margin-left: 85px;
+	font-size: 15.5px;
+}
+button
+{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	margin-left:85px;
+	border-radius: 25px;
+	border: 2px solid skyblue;
+	background: transparent;
+	font-family: myriad Pro;
+	font-weight: bold;
+	font-size: 16px;
+	position: relative;
+	overflow: hidden;
+	color: darkblue;
+	cursor: pointer;
+}
+span
+{
+	background: darkcyan;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+	color: white;
+	box-shadow: 3px 3px 10px darkcyan;
+}
+.second{
+	width: 95%;
+	height: 80vh;
+	background-color: white;
+	border-bottom: 2px solid lightgray;
+	border-top: 2px solid lightgray;
+	border-left: 2px solid lightgray;
+	border-right: 2px solid lightgray;
+	margin-left: 3%;
+
+}
+.second:hover{
+
+	animation: animate1 2s ease-in 4;
+}
+@keyframes animate1{
+	50%{background-color: lightsteelblue;}
+	100%{background-color: white;}
+}
+h2{
+	font-family: sans-serif;
+	text-align: center;
+	color: darkcyan;
+	font-size: 35px;
+	margin-top: 90px;
+}
+.second p{
+	font-family:  myriad Pro;
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 5px;
+}
+.square1{
+	width: 13.6%;
+	height: 30%;
+	margin-left: 10%;
+	margin-top: 40px;
+	background-color: white;
+	border-top: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	border-right: 1px solid darkblue;
+	border-left: 1px solid darkblue;
+	border-radius: 6%;
+}
+.pic1{
+	margin-left: 31px;
+}
+.square1 h3{
+	font-family: myriad Pro;
+	font-weight: bold;
+	color: darkgrey;
+	font-size: 16px;
+}
+.square1:hover{
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: pointer;
+	background-color: darkcyan;
+	box-shadow: 6px 6px 10px grey;
+}
+.square1 h3:hover{
+	color: white;
+}
+.square2{
+	width: 13.6%;
+	height: 30%;
+	margin-left: 27%;
+	margin-top: -14%;
+	background-color: white;
+	border-top: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	border-right: 1px solid darkblue;
+	border-left: 1px solid darkblue;
+	border-radius: 6%;
+}
+.pic2{
+	margin-left: 30px;
+}
+.square2 h3{
+	font-family: myriad Pro;
+	font-weight: bold;
+	color: darkgrey;
+	font-size: 16px;
+}
+.square2:hover{
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: pointer;
+	background-color: darkcyan;
+	box-shadow: 6px 6px 10px grey;
+}
+.square2 h3:hover{
+	color: white;
+}
+.square3{
+	width: 13.6%;
+	height: 30%;
+	margin-left: 44%;
+	margin-top: -14%;
+	background-color: white;
+	border-top: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	border-right: 1px solid darkblue;
+	border-left: 1px solid darkblue;
+	border-radius: 6%;
+}
+.pic3{
+	margin-left: 30px;
+}
+.square3 h3{
+	font-family: myriad Pro;
+	font-weight: bold;
+	color: darkgrey;
+	margin-top: -2px;
+	font-size: 16px;
+}
+.square3:hover{
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: pointer;
+	background-color: darkcyan;
+	box-shadow: 6px 6px 10px grey;
+}
+.square3 h3:hover{
+	color: white;
+}
+.square4{
+	width: 13.6%;
+	height: 30%;
+	margin-left: 61%;
+	margin-top: -14%;
+	background-color: white;
+	border-top: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	border-right: 1px solid darkblue;
+	border-left: 1px solid darkblue;
+	border-radius: 6%;
+}
+.pic4{
+	margin-left: 30px;
+}
+.square4 h3{
+	font-family: myriad Pro;
+	font-weight: bold;
+	color: darkgrey;
+	font-size: 16px;
+}
+.square4:hover{
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: pointer;
+	background-color: darkcyan;
+	box-shadow: 6px 6px 10px grey;
+}
+.square4 h3:hover{
+	color: white;
+}
+.square5{
+	width: 13.6%;
+	height: 30%;
+	margin-left: 78%;
+	margin-top: -14%;
+	background-color: white;
+	border-top: 1px solid darkblue;
+	border-bottom: 1px solid darkblue;
+	border-right: 1px solid darkblue;
+	border-left: 1px solid darkblue;
+	border-radius: 6%;
+}
+.pic5{
+	margin-left: 30px;
+}
+.square5 h3{
+	font-family: myriad Pro;
+	font-weight: bold;
+	color: darkgrey;
+	font-size: 16px;
+}
+.square5:hover{
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: pointer;
+	background-color: darkcyan;
+	box-shadow: 6px 6px 10px grey;
+}
+.square5 h3:hover{
+	color: white;
+}
+#btn{
+	float: right;
+	margin-right: 45%;
+	padding: 10px;
+	background-color: white;
+	margin-top: 5%;
+	border: 3px solid lightgray;	
+}
+#btn:hover{
+	border: none;
+	background-color: darkcyan;
+	cursor: pointer;
+	color: white;
+}
+.third{
+	width: 95%;
+	height: 50%;
+	margin-left: 3%;
+}
+.icon1{
+	float: left;
+	padding: 3%;
+	margin-top: 3%;
+	margin-left: 7%;
+	
+	}
+.icon2{
+	float: left;
+	padding: 3%;
+	margin-top: 3%;
+}
+.icon3{
+	float: left;
+	padding: 3%;
+	margin-top: 3%;
+}
+.icon4{
+	float: left;
+	padding: 3%;
+	margin-top: 3%;
+}
+.icon5{
+	float: left;
+	padding: 3%;
+	margin-top: 3%;
+}
+ .icon1 h3{
+	margin-left: 36%;
+	margin-top: 5%;
+	font-family: myriad Pro;
+	font-size: 22px;
+}
+.p1{
+	margin-left: 34%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	margin-top: 3%;
+	color: darkblue;
+}
+.p2{
+	margin-left: 21%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	color: darkblue;
+}
+.icon2 h3{
+	margin-left: 17%;
+	margin-top: 5%;
+	font-family: myriad Pro;
+	font-size: 20px;
+}
+.p3{
+	margin-left: 32%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	margin-top: 3%;
+	color: darkblue;
+}
+.p4{
+	margin-left: 38%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	color: darkblue;
+}
+.icon3 h3{
+	margin-left: 35%;
+	margin-top: 5%;
+	font-family: myriad Pro;
+	font-size: 20px;
+}
+.p5{
+	margin-left: 29%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	margin-top: 3%;
+	color: darkblue;
+}
+.p6{
+	margin-left: 24%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	color: darkblue;
+}
+.icon4 h3{
+	margin-left: 13%;
+	margin-top: 5%;
+	font-family: myriad Pro;
+	font-size: 20px;
+}
+.p7{
+	margin-left: 8%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	margin-top: 3%;
+	color: darkblue;
+}
+.p8{
+	margin-left: 8%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	color: darkblue;
+}
+.icon5 h3{
+	margin-left: 17%;
+	margin-top: 5%;
+	font-family: myriad Pro;
+	font-size: 20px;
+}
+.p9{
+	margin-left: 0;
+	font-family: myriad Pro;
+	font-size: 18px;
+	margin-top: 3%;
+	color: darkblue;
+}
+.p10{
+	margin-left: 29%;
+	font-family: myriad Pro;
+	font-size: 18px;
+	color: darkblue;
+}
+.fourth{
+	width: 95%;
+	height: 135vh;
+	margin-left: 3%;
+	background-color: lightseagreen;
+}
+.fourth h2{
+	color: white;
+    padding-top: 5%;
+    text-shadow: 1px 1px lightgray;
+}
+.fourth p{
+	text-align: center;
+	padding-top: 8px;
+	font-family: myriad Pro;
+}
+.imgspace1{
+	width: 240px;
+	height: 250px;
+	background-color: lightseagreen;
+	margin-left: 16%;
+	border-radius: 5%;
+	margin-top: 3%;
+	float: left;
+	border: 1px solid grey;
+	box-shadow: 5px 5px 10px gray;
+}
+.imgspace2{
+	width: 240px;
+	height: 250px;
+	background-color: lightseagreen;
+	margin-left: 6%;
+	border-radius: 5%;
+	margin-top: 3%;
+	float: left;
+	border: 1px solid grey;
+	box-shadow: 5px 5px 10px gray;
+}
+.imgspace3{
+	width: 240px;
+	height: 250px;
+	background-color: lightseagreen;
+	margin-left: 6%;
+	border-radius: 5%;
+	margin-top: 3%;
+	float: left;
+	border: 1px solid grey;
+	box-shadow: 5px 5px 10px gray;
+}
+.image1{
+	width: 200px;
+	height: 170px;
+	border-radius: 5%;
+	margin-left: 8%;
+	margin-top: 6%;
+}
+.image2{
+	width: 200px;
+	height: 170px;
+	border-radius: 5%;
+	margin-left: 8%;
+	margin-top: 6%;
+}
+.image3{
+	width: 200px;
+	height: 170px;
+	border-radius: 5%;
+	margin-left: 8%;
+	margin-top: 6%;
+}
+.imgspace1 h4{
+	text-align: center;
+	font-family: myriad Pro;
+	color: white;
+	font-size: 16px;
+}
+.imgspace2 h4{
+	text-align: center;
+	font-family: myriad Pro;
+	color: white;
+	font-size: 16px;
+}
+.imgspace3 h4{
+	text-align: center;
+	font-family: myriad Pro;
+	color: white;
+	font-size: 16px;
+}
+#btn1{
+	float: right;
+	margin-right: 45%;
+	padding: 10px 8px;
+	background-color: darkcyan;
+	margin-top: 3%;
+	box-shadow: 2px 2px 5px grey;	
+}
+#btn1:hover{
+	border: none;
+	cursor: pointer;
+	color: darkcyan;
+	background-color: white;
+}
+.retail h3{
+	text-align: center;
+	margin-top: 30%;
+	color: white;
+	font-family: myriad Pro;
+	font-size: 38px;
+	text-shadow: 1px 1px lightgray;
+}
+.imgspace4{
+	width: 240px;
+	height: 250px;
+	background-color: lightseagreen;
+	margin-left: 16%;
+	border-radius: 5%;
+	margin-top: 3%;
+	float: left;
+	border: 1px solid grey;
+	box-shadow: 5px 5px 10px gray;
+}
+.imgspace5{
+	width: 240px;
+	height: 250px;
+	background-color: lightseagreen;
+	margin-left: 6%;
+	border-radius: 5%;
+	margin-top: 3%;
+	float: left;
+	border: 1px solid grey;
+	box-shadow: 5px 5px 10px gray;
+}
+.imgspace6{
+	width: 240px;
+	height: 250px;
+	background-color: lightseagreen;
+	margin-left: 6%;
+	border-radius: 5%;
+	margin-top: 3%;
+	float: left;
+	border: 1px solid grey;
+	box-shadow: 5px 5px 10px gray;
+}
+.image4{
+	width: 200px;
+	height: 170px;
+	border-radius: 5%;
+	margin-left: 8%;
+	margin-top: 6%;
+}
+.image5{
+	width: 200px;
+	height: 170px;
+	border-radius: 5%;
+	margin-left: 8%;
+	margin-top: 6%;
+}
+.image6{
+	width: 200px;
+	height: 170px;
+	border-radius: 5%;
+	margin-left: 8%;
+	margin-top: 6%;
+}
+.imgspace4 h4{
+	text-align: center;
+	font-family: myriad Pro;
+	color: white;
+	font-size: 16px;
+}
+.imgspace5 h4{
+	text-align: center;
+	font-family: myriad Pro;
+	color: white;
+	font-size: 16px;
+}
+.imgspace6 h4{
+	text-align: center;
+	font-family: myriad Pro;
+	color: white;
+	font-size: 16px;
+}
+#btn2{
+	float: right;
+	margin-right: 45%;
+	padding: 10px 8px;
+	background-color: darkcyan;
+	margin-top: 3%;
+	box-shadow: 2px 2px 5px grey;	
+}
+#btn2:hover{
+	border: none;
+	cursor: pointer;
+	color: darkcyan;
+	background-color: white;
+}
